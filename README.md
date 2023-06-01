@@ -1,7 +1,7 @@
 # Measuring temporal bias in sequential numerosity processing
 
 This folder contains an example of code to generate sequential numerical stimuli under the framework described in Dolfi et al. (in preparation).
-#Serena Dolfi, June 2023, serena.dolfi@phd.unipd.it
+*Serena Dolfi, June 2023*, serena.dolfi@phd.unipd.it
 
 **WARNING**
 
