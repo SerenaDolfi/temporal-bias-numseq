@@ -1,0 +1,28 @@
+This folder contains the data and the script to replicate the analyses described in Dolfi et al. (in preparation).
+#Serena Dolfi, May 2023, serena.dolfi@phd.unipd.it
+
+## DATASET DESCRIPTION:
+
+- "data_numcomp_auditory" and "data_numcomp_visual": data from all participants included in the final analyses reported in the article, separately for the visual and auditory numerosity comparison tasks, in long-database format (trial-by-trial). 
+Headers:
+- ID: unique identifier of each participant
+- Trial: trial number (only test trials included)
+- Task: visual or auditory
+- OS
+- frameRate
+- Gender
+- Age: in years
+- Audio (auditory task only): speakers or headset
+- Stim_name_1/2: unique identifier of stimuli (1 is the first, 2 is the second)
+- Ied_vec_1/2: vector of individual event durations (in frames)
+- Int_vec_1/2: vector of interval durations (in frames)
+- Num_1/2: numerosity
+- Dur_1/2: duration
+- Tmp_sp_1/2: temporal spacing
+- MED_1/2: mean event duration
+- TED_1/2: total event duration
+- TSD_1/2: total stimulus duration
+- MEP_1/2: mean event period
+- Resp_key: trial-by-trial raw answer
+- Resp_acc: trial-by-trial correctness of response
+- Resp_rt: trial-by-trial response time (from the appearance of response prompt)
