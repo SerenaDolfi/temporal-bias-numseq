@@ -1,7 +1,9 @@
 # Measuring temporal bias in sequential numerosity processing
 
 This folder contains an example of code to generate sequential numerical stimuli under the framework described in:
+
 Dolfi, S., Testolin, A., Cutini, S., & Zorzi, M. (2024). Measuring temporal bias in sequential numerosity comparison. 'Behavior Research Methods', 1-13. https://doi.org/10.3758/s13428-024-02436-x.
+
 *Serena Dolfi, May 2024*, serena.dolfi@phd.unipd.it
 
 **WARNING**
