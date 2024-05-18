@@ -2,7 +2,7 @@ function [seq] = seq_stim_creator(n,ted,tsd,event_method,interval_method)
 %SEQ STIM CREATOR Function to create non-symbolic sequential numerical
 %stimuli, from a combination of Numerosity, Total event duration and Total
 %stimulus duration. 
-%Serena Dolfi, March 2023, serena.dolfi@phd.unipd.it
+%Serena Dolfi, May 2024, serena.dolfi@phd.unipd.it
 
 %Inputs are:
 %n (numeric) = the number of events in the sequence 
@@ -103,7 +103,7 @@ if strcmp(interval_method,'Fixed') %If fixed, round the intervals
     int_vec = round(repmat(int,1,n-1));
 elseif strcmp(interval_method,'Sum')
     if int - min_int < 1 %To allow a fast solution also in case of small int values
-        int_vec = floor(repmat(int,1,n));
+        int_vec = floor(repmat(int,1,n-1));
         diff_int = tot_int - sum(int_vec);
         for i = 1:diff_int
             change_int = randperm(length(int_vec));
@@ -116,8 +116,8 @@ elseif strcmp(interval_method,'Sum')
         while success == 0
             tank = 0;
             success = 1;
-            for i = 1:n
-                if i == n
+            for i = 1:n-1
+                if i == n-1
                     int_vec(i) = tot_int - tank;
                     if int_vec(i) < min_int || int_vec(i) > max_int
                         success = 0;
